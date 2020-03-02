@@ -1,0 +1,121 @@
+body {
+  height: 100%;
+  margin: 0;
+  background: #1783f5;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333333;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333333;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/* Help us to improve - components */
+.badge_container {
+  position: relative;
+  width: 43px;
+  height: 43px;
+}
+
+.badge_text {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.badge_text:hover {
+  color: #ffffff;
+}
+
+.badge_container #badgeoverlay:hover .badge_text {
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+
+/* Rate your epxerience - component */
+.rate_container {
+  padding: 15px;
+  width: 350px;
+  height: 150px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -5px #333333;
+}
+
+/* Thank You Rate more - component */
+.ratemore_container,
+.thankyou_container {
+  border-radius: 5px;
+  padding: 30px;
+  width: 350px;
+  height: 150px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  box-shadow: 0 10px 20px -5px #333333;
+}
+
+/* Tell us more - component */
+.tellusmore_container {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.tellusmore_card_header {
+  border-radius: 5px 5px 0px 0px;
+  width: 350px;
+  height: 50px;
+  background: #333333;
+}
+
+.tellusmore_card_body {
+  width: 350px;
+  height: 320px;
+  background: #f8f8f8;
+}
+
+.tellusmore_card_footer {
+  width: 350px;
+  height: 80px;
+  background: #f8f8f8;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  box-shadow: 0 10px 20px -5px #333333;
+}
