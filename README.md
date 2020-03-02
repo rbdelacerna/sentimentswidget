@@ -1,6 +1,8 @@
-# Build a UI front-end prototype for Sentiments Widget using React JS
+# Sentiments Widget 
 
-# Functional Requirements
+# User Interface (UI) Functional Requirements
+
+# The following steps below, shows the users a step by step on how to a use the Sentiments Widget that is visible fixed at the bottom of the browser. 
 
 1.) User hovers the widget, the “Help us improve” badge will slide out
 
