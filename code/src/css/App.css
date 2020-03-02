@@ -73,6 +73,15 @@ textarea {
   left: 25px;
   overflow: hidden;
   box-shadow: 0 10px 20px -5px #333333;
+  z-index: -1;
+}
+
+.rate-container-fade-in,
+.ratemore-container-fade-in,
+.tellusmore-container-fade-in,
+.thankyou-container-fade-in {
+  opacity: 1 !important;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Thank You Rate more - component */
@@ -88,6 +97,7 @@ textarea {
   bottom: 40px;
   left: 25px;
   box-shadow: 0 10px 20px -5px #333333;
+  z-index: -1;
 }
 
 /* Tell us more - component */
@@ -109,6 +119,8 @@ textarea {
   width: 350px;
   height: 320px;
   background: #f8f8f8;
+  opacity: 1;
+  z-index: 1;
 }
 
 .tellusmore_card_footer {
@@ -118,4 +130,6 @@ textarea {
   border-radius: 0px 0px 5px 5px;
   position: relative;
   box-shadow: 0 10px 20px -5px #333333;
+  opacity: 1;
+  z-index: 1;
 }
