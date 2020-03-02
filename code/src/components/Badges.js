@@ -30,10 +30,11 @@ function showRateCard() {
   if (BadgeCard) {
     BadgeCard.style.display = "none";
     RateCard.style.display = "block";
-    const element = document.querySelector(".rate_container");
-    element.classList.add("animated", "SlideInUp");
+
     // RateCard.classList.remove("rate_container");
     // RateCard.classList.add("rate_overlay");
+    const element = document.querySelector(".rate_container");
+    element.classList.add("animated", "bounceIn");
   }
 }
 

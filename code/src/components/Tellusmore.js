@@ -63,15 +63,17 @@ function thankYou() {
   if (TellUsMoreCard) {
     TellUsMoreCard.style.display = "none";
     ThankYouCard.style.display = "block";
+    const element = document.querySelector(".thankyou_container");
+    element.classList.add("animated", "bounceIn");
   }
 
   setTimeout(function() {
     ThankYouCard.style.display = "none";
-  }, 2000);
+  }, 3000);
 }
 
 export const TellUsMore = () => (
-  <Card id="tellusmorecard">
+  <Card id="tellusmorecard" className="tellsumore_container">
     <Close>
       <img height="20" onClick={closeCard} src={CloseImg} alt="Close Icon" />
     </Close>

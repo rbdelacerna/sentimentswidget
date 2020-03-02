@@ -109,12 +109,14 @@ function rateExperience() {
   if (RateCard) {
     RateCard.style.display = "none";
     RateMoreCard.style.display = "block";
+    const element = document.querySelector(".ratemore_container");
+    element.classList.add("animated", "bounceIn");
   }
 
   setTimeout(function() {
     RateMoreCard.style.display = "none";
     TellUsMoreCard.style.display = "block";
-  }, 2000);
+  }, 3000);
 }
 
 export const Rate = () => (
