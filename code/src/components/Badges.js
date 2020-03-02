@@ -10,7 +10,8 @@ const Content = Styled.div`
   transition: width 0.5s ease;
   background-color: #333333;
   position:relative;
-  
+  z-index:1;
+
   :hover {
     cursor:pointer;
     width: 230px;
@@ -30,11 +31,9 @@ function showRateCard() {
   if (BadgeCard) {
     BadgeCard.style.display = "none";
     RateCard.style.display = "block";
-
-    // RateCard.classList.remove("rate_container");
-    // RateCard.classList.add("rate_overlay");
-    const element = document.querySelector(".rate_container");
-    element.classList.add("animated", "bounceIn");
+    RateCard.style.opacity = 1;
+    RateCard.style.zIndex = 1;
+    RateCard.classList.add("rate-container-fade-in");
   }
 }
 

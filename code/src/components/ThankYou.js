@@ -19,11 +19,7 @@ const Description = Styled.div`
 `;
 
 export const ThankYou = () => (
-  <Card
-    id="thankyoucard"
-    className="thankyou_container"
-    style={{ display: "none" }}
-  >
+  <Card id="thankyoucard" className="thankyou_container" style={{ opacity: 0 }}>
     <Card.Body>
       <Title>Thank you!</Title>
       <Description>Your feedback is valuable to us.</Description>

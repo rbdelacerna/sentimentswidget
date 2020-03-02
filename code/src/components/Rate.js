@@ -97,7 +97,9 @@ function closeCard() {
   var rateCard = document.getElementById("ratecard");
   if (rateCard) {
     badgeCard.style.display = "block";
-    rateCard.style.display = "none";
+    rateCard.style.opacity = 0;
+    rateCard.style.zIndex = -1;
+    rateCard.classList.remove("rate-container-fade-in");
   }
 }
 
@@ -109,18 +111,20 @@ function rateExperience() {
   if (RateCard) {
     RateCard.style.display = "none";
     RateMoreCard.style.display = "block";
-    const element = document.querySelector(".ratemore_container");
-    element.classList.add("animated", "bounceIn");
+    RateMoreCard.style.opacity = 1;
+    RateMoreCard.classList.add("ratemore-container-fade-in");
   }
 
   setTimeout(function() {
     RateMoreCard.style.display = "none";
     TellUsMoreCard.style.display = "block";
+    TellUsMoreCard.style.opacity = 1;
+    TellUsMoreCard.classList.add("tellusmore-container-fade-in");
   }, 3000);
 }
 
 export const Rate = () => (
-  <Card id="ratecard" className="rate_container" style={{ display: "none" }}>
+  <Card id="ratecard" className="rate_container" style={{ opacity: 0 }}>
     <Card.Body>
       <Close onClick={closeCard}>
         <img height="20" src={CloseImg} alt="Close Icon" />

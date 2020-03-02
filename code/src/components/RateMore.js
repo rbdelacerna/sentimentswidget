@@ -22,11 +22,7 @@ const RateMoreBox = Styled.div`
 `;
 
 export const RateMore = () => (
-  <Card
-    id="ratemorecard"
-    className="ratemore_container"
-    style={{ display: "none" }}
-  >
+  <Card id="ratemorecard" className="ratemore_container" style={{ opacity: 0 }}>
     <Card.Body>
       <RateMoreBox>
         <img src={SmileyImg} alt="Smile Icon" />

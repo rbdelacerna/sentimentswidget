@@ -44,7 +44,6 @@ position: relative;
 box-sizing: border-box;
 bottom: 410px;
 left: 6px;
-display: none;
 `;
 
 function closeCard() {
@@ -53,6 +52,7 @@ function closeCard() {
   if (TellUsMoreCard) {
     BadgeCard.style.display = "block";
     TellUsMoreCard.style.display = "none";
+    TellUsMoreCard.classList.remove("thankyou-container-fade-in");
   }
 }
 
@@ -62,18 +62,22 @@ function thankYou() {
 
   if (TellUsMoreCard) {
     TellUsMoreCard.style.display = "none";
-    ThankYouCard.style.display = "block";
-    const element = document.querySelector(".thankyou_container");
-    element.classList.add("animated", "bounceIn");
+    ThankYouCard.style.opacity = 1;
+    ThankYouCard.classList.add("thankyou-container-fade-in");
   }
 
   setTimeout(function() {
     ThankYouCard.style.display = "none";
+    ThankYouCard.style.opacity = 0;
   }, 3000);
 }
 
 export const TellUsMore = () => (
-  <Card id="tellusmorecard" className="tellsumore_container">
+  <Card
+    id="tellusmorecard"
+    className="tellusmore_container"
+    style={{ opacity: 0 }}
+  >
     <Close>
       <img height="20" onClick={closeCard} src={CloseImg} alt="Close Icon" />
     </Close>
